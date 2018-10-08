@@ -4,11 +4,13 @@ I'm inserting elements at the beginning of the list instead than appending them 
 I'm then adding the first 2 elements so that I don't have to traverse the whole list to get the last 2 items.
  */
 
-def fibonacci(x: Int): Int = {
-  def go(l: List[Int]): Int = {
-    if (l.length == x) l.head
-    else go(l.take(2).sum :: l)
+object Fibonacci {
+  def fibonacci(x: Int): Int = {
+    def go(l: List[Int]): Int = {
+      if (l.length == x) l.head
+      else go(l.take(2).sum :: l)
+    }
+    go(List(1, 0))
   }
-  go(List(1, 0))
+  println(fibonacci(2))
 }
-println(fibonacci(2))
