@@ -1,6 +1,3 @@
-import scala.collection.immutable
-import scala.util.matching.Regex
-
 /*
 Excerise can be found at https://www.hackerrank.com/challenges/functions-or-not/problem
  */
