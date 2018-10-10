@@ -9,4 +9,12 @@ object Utils {
       (vals.group(1).toInt, vals.group(2).toInt)
     }
   }.toList
+
+  def readInt: Int = {
+    scala.io.StdIn.readInt()
+  }
+
+  def readLine: String = {
+    scala.io.StdIn.readLine()
+  }
 }
