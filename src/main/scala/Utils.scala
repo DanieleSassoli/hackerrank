@@ -1,5 +1,3 @@
-
-
 object Utils {
   def readPairs(n: Int): List[(Int, Int)] = {
     1 to n map { _: Int =>
